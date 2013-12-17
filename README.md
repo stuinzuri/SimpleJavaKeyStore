@@ -12,19 +12,19 @@ import static ch.geekomatic.sjks.KeyStoreUtils.saveKey;
 Generating a key:
 
 ```java
-            SecretKey originalKey = generateKey();
+SecretKey originalKey = generateKey();
 ```
 
 Saving a key:
 
 ```java
-            File file = new File("/path/to/key.file");
-            saveKey(originalKey, file);
+File file = new File("/path/to/key.file");
+saveKey(originalKey, file);
 ```
 
 Loading a key:
 
 ```java
-            File file = new File("/path/to/key.file");
-            SecretKey persistedKey = loadKey(file);
+File file = new File("/path/to/key.file");
+SecretKey persistedKey = loadKey(file);
 ```
